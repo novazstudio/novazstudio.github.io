@@ -1,0 +1,189 @@
+/* Estilos generales */
+body {
+    font-family: 'Crimson Pro', serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/244/94/499/blue-dark-blur-gradation-wallpaper-preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .titulo1 {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Estilos para el encabezado y la navegación */
+  header {
+    position: relative;
+    text-align: center; /* Alinear el contenido del encabezado al centro */
+  }
+  
+  h1 {
+    margin: 0;
+    color: white;
+  }
+  
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 40px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; /* Alinear los elementos de la lista a la derecha */
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav li a:hover {
+    color: red;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .titulo1 {
+      font-size: 24px; /* Ajusta el tamaño del texto del título para dispositivos más pequeños */
+    }
+  
+    nav {
+      position: static; /* Cambiar la posición a estática para que el nav fluya con el contenido */
+      line-height: 20px; /* Ajustar la altura de línea para dispositivos más pequeños */
+    }
+  
+    nav ul {
+      text-align: center; /* Alinear los elementos de la lista al centro */
+    }
+  }
+  .titulo-lanzamiento {
+    margin-top: 50px;
+    font-weight: normal;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 1; /* Define el estado inicial (totalmente visible) */
+    }
+    to {
+      opacity: 0.5; /* Define el estado final (completamente transparente) */
+    }
+  }
+  
+  /* Aplicar la animación a un elemento */
+  .titulo1 h1 {
+    animation: fade 4s ease-in-out infinite; /* Nombre de la animación, duración y función de temporización */
+    color: linear-gradient(to right, red, white);
+  }
+
+  .info {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #c3c0c0;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .info a {
+    text-decoration: none;
+    color: red;
+  }
+
+  .info  a {
+    animation: fade 5s ease-in-out infinite;
+  }
+
+  .info a:hover{
+    color: aqua;
+  }
+
+.sobre-nosotros {
+    margin-top: 50px;
+    font-weight: normal;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.sub {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #c3c0c0;
+  max-width: 80%;
+  margin: auto;
+}
+.titulo-descargas {
+  margin-top: 50px;
+  font-weight: normal;
+  margin-left: 10px;
+  color: #fff;
+  text-align: center;
+}
+.imagen-aplicacion img {
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.imagen-aplicacion {
+  text-align: center;
+  
+}
+
+.imagen-aplicacion .betas .beta-app{
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 20px
+}
+@keyframes giro-luz {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7), 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0), 0 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0), 0 0 0 40px rgba(255, 255, 255, 0);
+  }
+}
+
+.descargar {
+  animation: giro-luz 2s linear infinite;
+  background-color: red;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px; /* Añadir padding para que el botón tenga espacio alrededor del texto */
+  border: none; /* Quitar el borde */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  font-size: 16px; /* Ajustar el tamaño del texto */
+  margin-bottom: 200px;
+}
+
+/* Agregar un estilo cuando el cursor esté encima del botón */
+.descargar:hover {
+  background-color: darkred;
+}
+
+
