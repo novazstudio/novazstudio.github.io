@@ -185,5 +185,7 @@ body {
 .descargar:hover {
   background-color: darkred;
 }
-
-
+.creditos {
+  font-size: 10px;
+  text-align: center;
+}
